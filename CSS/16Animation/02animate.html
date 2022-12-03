@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: violet;
+            animation-fill-mode: both;
+            animation-name: fire;
+            animation-duration: 3s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+        @keyframes fire{
+            /* from{background-color: yellowgreen;}
+            to{background-color: aqua;} */
+            0%{ background-color: brown; }
+			10%{ background-color: orange; }
+			20%{ background-color: orangered; }
+			30%{ background-color: yellow; }
+			40%{ background-color: rebeccapurple; }
+			50%{ background-color: firebrick; }
+			60%{ background-color: green; }
+			70%{ background-color: rgb(212, 101, 101); }
+			100%{ background-color: blueviolet; }
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            animation-name: Magic;
+            animation-duration: 5s;
+            position: relative;
+            animation-iteration-count: infinite;
+        }
+        @keyframes Magic
+		{
+			0% {background: blue; left: 0;top: 0}
+			10% {background: red; left: 200px;top: 0; border-radius: 50%; transform: rotate(180deg); }
+			20% {background: green; left: 200px;top: 200px}
+			30% {background: hotpink; left: 0px;top: 200px}
+			100% {background: gray;left: 0;top: 0}
+		}
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

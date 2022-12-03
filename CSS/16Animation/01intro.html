@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            animation-name: xyz;
+            animation-duration: 3s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+        }
+        @keyframes xyz{
+            /* from{
+                background-color: red;
+            }
+            to{
+                background-color: blue;
+            } */
+            0%{ background-color: brown; }
+			10%{ background-color: orange; }
+			20%{ background-color: orangered; }
+			30%{ background-color: yellow; }
+			40%{ background-color: rebeccapurple; }
+			50%{ background-color: firebrick; }
+			60%{ background-color: green; }
+			70%{ background-color: rgb(212, 101, 101); }
+			100%{ background-color: blueviolet; }
+        }
+        .para{
+            animation-name: move;
+            animation-duration: 3s;
+            animation-timing-function: ease-in;
+            /* animation-timing-function: ease-out; */
+
+            animation-iteration-count: infinite;
+        }
+        @keyframes move{
+            from{
+                margin-left: 80%;
+                width: 200%;
+            }
+            to{
+                margin-left: 0;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero odit aliquam modi veniam quam quia doloremque officia quas? Quisquam quidem delectus sapiente error. Blanditiis officia fugiat perspiciatis ipsa velit iusto.</p>
+</body>
+</html>

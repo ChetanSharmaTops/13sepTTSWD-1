@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 1px solid black;
+        }
+
+        .container {
+            width: 900px;
+            margin: 0 auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col-50 {
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        @media (min-width: 576px) {
+            .container {
+                width: 520px;
+
+            }
+
+            .col-50 {
+                width: 50%;
+            }
+        }
+
+
+        /* // Small devices (landscape phones, 576px and up)
+        @media (min-width: 576px) {
+            ...
+        }
+
+        // Medium devices (tablets, 768px and up)
+        @media (min-width: 768px) {
+            ...
+        }
+
+        // Large devices (desktops, 992px and up)
+        @media (min-width: 992px) {
+            ...
+        }
+
+        // X-Large devices (large desktops, 1200px and up)
+        @media (min-width: 1200px) {
+            ...
+        }
+
+        // XX-Large devices (larger desktops, 1400px and up)
+        @media (min-width: 1400px) {
+            ...
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem odio reiciendis illum
+                rerum ad velit sequi quidem dolores pariatur incidunt! Dicta error officiis, veritatis placeat eius
+                pariatur sequi illo voluptatibus?</div>
+            <div class="col-50"><img src="../../Images/banner.jpg" alt=""></div>
+        </div>
+    </div>
+</body>
+
+</html>

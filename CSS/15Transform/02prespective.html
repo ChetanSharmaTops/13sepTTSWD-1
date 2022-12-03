@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(248, 87, 87);
+        }
+        .container{
+            margin-top: 10%;
+            margin-left: 20px;
+            margin-right: 20px;
+            text-align: center;
+        }
+        div[class*="box"]{
+            width: 200px;
+            height: 200px;
+            background-color: #fff;
+            color: black;
+            display: inline-block;
+            border-radius: 5px;
+            margin: 10px 20px 10px 20px;
+            transition: 0.4s ease-in;
+
+
+        }
+        .b1{
+            transform-origin: left center;
+        }
+        .b1:hover{
+            transform: perspective(300px) rotatey(45deg);
+            opacity: 0.8;
+        }
+        .b2{
+            transform-origin: bottom center;
+        }
+        .b2:hover{
+            transform: perspective(300px) rotatex(45deg);
+            opacity: 0.8;
+        }
+        .b3{
+            transform-origin: right center;
+        }
+        .b3:hover{
+            transform: perspective(300px) rotatey(-45deg);
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box b1">
+            <span class="text">left box</span>
+        </div>
+        <div class="box b2">
+            <span class="text">left box</span>
+        </div>
+        <div class="box b3">
+            <span class="text">left box</span>
+        </div>
+        
+    </div>
+
+</body>
+
+</html>
