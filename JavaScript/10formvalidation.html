@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="username" id="username" onblur="validate(this, 'usernameError')">
+    <span id="usernameError"></span>
+    <br>
+    <input type="text" name="password" id="password" onblur="validate(this, 'passwordError')">
+    <span id="passwordError"></span>
+    <br>
+    <input type="email" name="email" id="email" onblur="validate(this, 'emailError')"
+        onkeyup="checkmail(this, 'emailError')">
+    <span id="emailError"></span>
+    <br>
+    <input type="tel" name="tel" id="tel" onblur="validate(this, 'telError')"
+        onkeypress="return(event.which >=48 && event.which <=57)" minlength="10" maxlength="10">
+    <span id="telError"></span>
+
+
+
+    <script>
+        function checkmail(e, spnid){
+            // console.log(e.type);
+            // console.log(e.name);
+
+            if (e.name == "username"){
+                if (e.name == ''){
+                    document.getElementById("usernameError").innerText = "This Field Is Required"
+                }
+                else{
+                    document.getElementById("usernameError").innerText = ""
+                }
+            } else if (e.name == "tel") {
+                if (e.name == ''){
+                    document.getElementById("telError").innerText = "This Field Is Requried"
+                }
+                else{
+                    document.getElementById("telError").innerText = ""
+
+                }
+            }
+        }
+        function validate(a, spnkaipan) {
+            console.log(a.value);
+            var username = document.getElementById("username").value
+             console.log(username);
+            if (a.value == "") {
+                document.getElementById(spnkaipan).innerText = "This field is required"
+            } else {
+                document.getElementById(spnkaipan).innerText = ""
+            }
+        }
+    </script>
+</body>
+
+</html>
