@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Here is my JQuery</p>
+    <p>Here is my JQuery</p>
+    <p>Here is my JQuery</p>
+    <p class="class">Here is my JQuery</p>
+    <p>Here is my JQuery</p>
+    <p>Here is my JQuery</p>
+    <p id="id">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tempore ducimus assumenda accusantium
+        porro quasi magnam fugit quas voluptatem beatae fuga, dolor accusamus ipsam, quibusdam, soluta consectetur
+        recusandae maiores minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora perferendis
+        dignissimos enim dolor illum perspiciatis ut nulla vitae temporibus officiis aut, eos sint possimus error beatae
+        officia consequuntur ab quas!</p>
+<img src="../Images/banner.jpg" alt="">
+</body>
+<!-- <script src="js/jquery-3.6.2.min.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.6.2.min.js"
+    integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+
+<script>
+
+    $(document).ready(function () {
+        // $(function(){
+
+
+        // console.log($);
+        console.log(jQuery);
+        // $(selector).action();
+        // $("p").click();     //  click on p
+        // $("p").click(function () {
+        $("img").click(function () {
+            // console.log("Hello Sankeerth");
+
+            // $(this).hide();
+            // $("#id").hide();
+            // $(".class").hide();
+            // $("p").fadeOut("slow");
+            // $("img").fadeOut("slow");
+            // $("img").fadeOut(5000);
+            $("img").fadeToggle(5000);
+            // $("img").delay("slow").fadeIn();    
+        });    //  when we click on p
+
+
+    })
+
+
+// Selectors in jQuery 
+
+// We have three Selectors in jQuery
+
+// 1. Element Selector
+// 2. ID Selector
+// 3. Class Selector
+
+
+</script>
+
+</html>
