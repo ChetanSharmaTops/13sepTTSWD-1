@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            background-color: teal;
+            color: aliceblue;
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h1>Mouse Event</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, dolorum.</p>
+    </div>
+</body>
+<script src="js/jquery-3.6.2.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $("#box").click(function(){
+            $("#box").css('background-color','orange');
+        });
+
+
+        $("#box").dblclick(function(){
+            $("#box").css('background-color','red');
+        });
+
+
+        $("#box").mouseenter(function(){
+            $("#box").css('background-color','green');
+        });
+
+        $("#box").mouseleave(function(){
+            $("#box").css('background-color','');
+        });
+    });
+</script>
+</html>
