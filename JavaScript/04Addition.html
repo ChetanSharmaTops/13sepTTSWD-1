@@ -11,12 +11,12 @@
     <!-- <input type="text" name="inp-name" class="inp-class" id="inp-id"> -->
     <input type="text" name="val1" class="inp-class" id="val1">
     <input type="text" name="val2" class="inp-class" id="val2">
-    <!-- <button value="anything" onclick="btnclick(this, 'Hello', 'Roshni')">Click</button> -->
-    <button value="anything" onclick="btnclick(this)">Click</button>
+    <button value="anything" onclick="btnclick(this, 'Hello', 'Roshni')">Click</button>
+    <!-- <button value="anything" onclick="btnclick(this)">Click</button> -->
     <div id="dispdata"></div>
     <script>
-        // function btnclick(show, e, avani) {
-        function btnclick(show) {
+        function btnclick(show, e, avani) {
+        // function btnclick(show) {
             // let a = 50;
             // let b = 150;
             // let a = document.getElementById("val1");
@@ -28,7 +28,7 @@
             let sum = parseInt(a)+parseFloat(b);
             // document.write(a+b);
             // document.write(sum);
-            // document.getElementById("dispdata").innerHTML = "Test innerHTML" + e + avani
+            document.getElementById("dispdata").innerHTML = "Test innerHTML" + e + avani
             // document.getElementById("dispdata").innerHTML = "Test innerHTML"
             // document.getElementById("dispdata").innerText = "Test innerText"
             // document.getElementById("dispdata").innerHTML = "<b>Test innerHTML </b>"
