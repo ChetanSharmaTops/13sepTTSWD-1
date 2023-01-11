@@ -6,31 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            border: 1px solid black;
+        div[class*='box']{
+            height: 200px;
+            border: 10px solid red;
         }
-        .container{
-            width: 1100px;
-            margin: 0 auto;
-        }
-        .row{
-            display: flex;
-        }
-        .col-50{
-            width: 50%;
+        .box-20{
+            border: 10px dashed teal !important;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-50">Test</div>
-            <div class="col-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sapiente veniam doloribus nostrum nam autem ipsa quam alias quos. Eligendi adipisci ut sapiente quam reprehenderit vel quia explicabo cum maiores?</div>
-        </div>
-    </div>
-    
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box-20"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
 </body>
 </html>
