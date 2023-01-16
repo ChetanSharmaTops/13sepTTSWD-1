@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: 1px solid;
+      }
+      .container {
+        width: 90%;
+        margin: 0 auto;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .col-25 {
+        width: 25%;
+      }
+      img {
+        width: 100%;
+      }
+      h1 {
+        font-size: 50px;
+      }
+      p {
+        font-size: 30px;
+      }
+
+      /* mediaqurey */
+
+      /* // Small devices (landscape phones, 576px and up) */
+      @media (min-width: 576px) {
+        .container {
+          width: 520px;
+        }
+        .col-25 {
+          width: 100%;
+        }
+      }
+
+      /* // Medium devices (tablets, 768px and up) */
+      @media (min-width: 768px) {
+        .container {
+          width: 720px;
+        }
+        .col-25 {
+          width: 50%;
+        }
+      }
+
+      /* // Large devices (desktops, 992px and up) */
+      @media (min-width: 992px) {
+        .container {
+          width: 920px;
+        }
+        .col-25 {
+          width: 33.33%;
+        }
+      }
+
+      /* // X-Large devices (large desktops, 1200px and up) */
+      @media (min-width: 1200px) {
+        .container {
+          width: 1120px;
+        }
+        .col-25 {
+          width: 25%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-25">
+          <h1>HTML doubts</h1>
+        </div>
+        <div class="col-25"><img src="../../Images/banner.jpg" alt="" /></div>
+        <div class="col-25">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+            voluptatum hic voluptate molestiae qui dignissimos quisquam! Hic
+            excepturi a quos, corporis necessitatibus, quo voluptatem
+            laudantium, vel consectetur fugit assumenda. Quos.
+          </p>
+        </div>
+        <div class="col-25"><img src="../../Images/carnival.jpg" alt="" /></div>
+      </div>
+    </div>
+  </body>
+</html>
